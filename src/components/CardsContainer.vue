@@ -1,10 +1,10 @@
 <template>
   <div class="card-container">
     <div class="card" v-for="card in cardContent" :key="card.id">
-      <img :src="card.image" alt="Image" class="card-img">
+      <img :src="card.image" alt="Image" class="card__image">
       <div class="card-content">
-        <p class="card-description">{{ card.text }}</p>
-        <button class="read-more-btn">READ MORE</button>
+        <p class="card__description">{{ card.text }}</p>
+        <button class="read__more__button">READ MORE</button>
       </div>
     </div>
   </div>
@@ -55,7 +55,7 @@ export default {
   flex-direction: column; /* To make card content stack vertically */
 }
 
-.card-img {
+.card__image {
   max-width: 90%; /* Adjust the max-width as needed */
   margin: 0 auto;
   padding-top: 15px;
@@ -72,12 +72,12 @@ export default {
   justify-content: space-between; /* Push items to top and bottom */
 }
 
-.card-description {
+.card__description {
   font-size: 0.9rem;
   margin-bottom: 15px;
 }
 
-.read-more-btn {
+.read__more__button {
   display: flexbox;
   align-items: center;
   padding: 8px 15px;

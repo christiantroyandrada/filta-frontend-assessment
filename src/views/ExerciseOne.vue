@@ -5,8 +5,8 @@
         <img v-if="windowWidth > 600" alt="Banner" src="../assets/banner.png">
         <img v-else alt="Banner" src="../assets/mobile-banner.png">
         <div class="text-container">
-          <h1 class="heading">Hello Developer!</h1>
-          <h5 class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+          <h1 class="heading__text">Hello Developer!</h1>
+          <h5 class="sub__heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
         </div>
       </div>
     </div>
@@ -76,12 +76,12 @@ h1,h5{
   z-index: 2;
 }
 
-.heading {
+.heading__text {
   font-size: 2.7rem;
   margin-bottom: 0;
 }
 
-.sub-heading {
+.sub__heading {
   width: 100vw;
   font-size: 1.2rem;
   font-weight: 100 !important;
@@ -94,7 +94,7 @@ h1,h5{
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
-  .sub-heading{
+  .sub__heading{
     width: 90vw;
   }
 }
