@@ -65,7 +65,7 @@ export default {
 }
 
 .card-content {
-  padding:0 15px 15px;
+  padding:10px 15px 15px;
   flex: 1; /* Allow card content to expand */
   display: flex;
   flex-direction: column;
@@ -78,6 +78,8 @@ export default {
 }
 
 .read-more-btn {
+  display: flexbox;
+  align-items: center;
   padding: 8px 15px;
   background-color: white;
   color: #000;
@@ -96,9 +98,10 @@ export default {
     flex-wrap: wrap; /* Allow cards to wrap to the next row */
     justify-content: center;
     width: 90%;
-    margin: 2rem auto 0;
+    margin: 2rem auto;
   }
   .card {
+    margin-bottom: 2rem;
     width: calc(100% - 20px); /* Display one card per row on mobile */
   }
 }

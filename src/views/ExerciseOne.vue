@@ -40,6 +40,7 @@ export default {
   methods: {
     updateWindowWidth () {
       this.windowWidth = window.innerWidth
+      this.$store.commit('setDeviceWidth', window.innerWidth)
     }
   },
   computed: {
@@ -63,7 +64,7 @@ h1,h5{
 }
 
 .banner img {
-  width: 100%;
+  width: 100vw;
 }
 
 .text-container {
