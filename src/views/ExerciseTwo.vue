@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="exercise-two-container">
     <!-- Tabs for Desktop -->
     <div class="d-none d-lg-block" role="navigation">
       <ul class="nav nav-tabs justify-content-center" role="tablist">
@@ -66,6 +66,9 @@ export default {
 }
 </script>
 <style scoped>
+.exercise-two-container {
+  height: 100vh;
+}
  .content-text {
   line-height: 1.6; /* Adjust line height for readability */
   color: #333; /* Define text color */
