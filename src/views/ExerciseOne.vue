@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Cards from '@/components/HelloWorld.vue'
+import Cards from '@/components/CardsContainer.vue'
 import { debounce } from 'lodash'
 
 export default {
