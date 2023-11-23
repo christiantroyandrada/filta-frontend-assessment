@@ -14,8 +14,8 @@ export default createStore({
     }
   },
   actions: {
-    async loadJSONData ({ commit }) {
-      const loadedData = JSON.stringify(Data)
+    async loadData ({ commit }) {
+      const loadedData = Data
       commit('setBackendData', loadedData)
     }
   },

@@ -114,7 +114,7 @@ export default {
     margin: 2rem auto 0;
   }
   .card {
-    width: 90%; /* Display one card per row on mobile */
+    width: 40%; /* Display one card per row on mobile */
   }
 }
 </style>

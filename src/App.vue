@@ -3,8 +3,21 @@
     <router-link to="/">Exercise 1</router-link> |
     <router-link to="/exercise-two">Exercise 2</router-link>
   </nav>
-  <router-view/>
+  <router-view v-slot="{ Component, route }">
+    <transition name="fade">
+      <component :is="Component" :key="route.path" />
+    </transition>
+  </router-view>
 </template>
+<script>
+export default {
+  computed: {
+    transitionName () {
+      return this.$route.meta.transition || 'fade' // Define transition name in route meta if needed
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -32,6 +45,15 @@ nav {
       color: grey;
     }
   }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 
 @media screen and (max-width:299px) {
